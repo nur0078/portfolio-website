@@ -58,9 +58,9 @@
                 </div>
                 <div class="tab-contents" id="'experience">
                     <ul>
-                        <li><span>Feb 2022 - Current</span><br>Internship at #IT company# </li>
-                        <!-- <li><span>Web Developer</span><br>Web application development</li> -->
-                        <!-- <li><span>App Development</span><br>Builidng mobile apps</li> -->
+                        <li><span>2022 - Current</span><br>Internship at IT company </li>
+                        <li><span>2022 - Current</span><br>Table Games Dealer at The Star.</li>
+                        <li><span>2021 - Current</span><br>Freelance</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -87,6 +87,10 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        // document.getElementById(tabname).classList.add("active-tab");
+        
     }
 
 </script>
