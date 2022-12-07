@@ -65,7 +65,8 @@ nav ul li a:hover::after {
 }
 .header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
 }
 .header-text h1 span {
     color:#004cff;
@@ -128,9 +129,15 @@ nav ul li a:hover::after {
 
 .tab-contents ul li {
     list-style: none;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .tab-contents ul li span {
     color: #17569D;
-    font-size: 16px;
+    font-size: 18px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }

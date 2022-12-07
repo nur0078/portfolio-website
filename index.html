@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anurodh Pandey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins"/>
+
 </head>
 <body>
 <div id="header">
@@ -21,8 +23,8 @@
             </ul>
         </nav>
         <div class="header-text">
-            <p>Web Developer</p>
             <h1> Hi, I am <span>anurodh</span>.</h1>
+            <p>Web Developer</p>
         </div>
     </div>
 </div>
@@ -43,15 +45,29 @@
                     This one too.
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link"> Skills</p>
-                    <p class="tab-links"> Experience</p>
-                    <p class="tab-links"> Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="'skills">
                     <ul>
                         <li><span>UI/UX</span><br>Desiging webapp interfaces.</li>
                         <li><span>Web Developer</span><br>Web application development</li>
-                        <li><span>Web Developer</span><br>Desiging web pages</li>
+                        <li><span>App Development</span><br>Building mobile apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="'experience">
+                    <ul>
+                        <li><span>Feb 2022 - Current</span><br>Internship at #IT company# </li>
+                        <!-- <li><span>Web Developer</span><br>Web application development</li> -->
+                        <!-- <li><span>App Development</span><br>Builidng mobile apps</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>UI/UX course - Coursera</li>
+                        <li><span>2022</span><br>B.IT - Federation University Australia</li>
+                        <li><span>2018</span><br> High School - Nepal</li>
                     </ul>
                 </div>
             </div>
